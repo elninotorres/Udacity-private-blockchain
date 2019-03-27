@@ -54,3 +54,22 @@ myBlockChain.validateChain();
 ```
 
 ```
+
+RESTful Web API with Node.js Framework
+
+RESTful Web API implemented using Express framework
+
+Here are the endpoints
+GET-End point
+
+ http://localhost:8000/block/0
+
+POST End point
+
+ http://localhost:8000/block
+     "body": "Testing block with test string data"
+
+
+The application runs on port 8000
+
+Run node app.js to run the application
