@@ -73,3 +73,36 @@ POST End point
 The application runs on port 8000
 
 Run node app.js to run the application
+
+#  STAR NOTARY PROJECT
+
+Run node app.js
+1.)http://localhost:8000/requestValidation (Request for validation)
+ In Body
+{ "address":"1NUAtxuiqeKqmp8VVFTRpQD55VjRfy2JEo"
+	
+}
+
+2.)http://localhost:8000/message-signature/validate (Request for signature validation)
+
+{ "address":"1NUAtxuiqeKqmp8VVFTRpQD55VjRfy2JEo",
+	"signature":"ICWeaR4ZLbt50HmkEFmIO2c5wxSXAJ2Uu1YP7AGUQVinfyMn0Fw4K5ltYC5SwWdsOBvUmoO4gltPVlbuvZLLSYw="
+	
+}
+
+3.)http://localhost:8000/block (Add new Block)
+
+{
+    "address": "1NUAtxuiqeKqmp8VVFTRpQD55VjRfy2JEo",
+    "star": {
+        "dec": "68° 52' 56.9",
+        "ra": "16h 29m 1.0s",
+        "story": "Found star using https://www.google.com/sky/"
+    }
+}
+
+4.)http://localhost:8000/block/3 (get block by height)
+
+5.)http://localhost:8000/stars/address:1NUAtxuiqeKqmp8VVFTRpQD55VjRfy2JEo (get block by Address)
+
+6.)http://localhost:8000/stars/hash:8bbd2ec869ec56c549041755d609c52819d89dbce060a8fb4bbf8bfcaa61b12a (get block by hash)
